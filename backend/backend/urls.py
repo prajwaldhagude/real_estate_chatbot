@@ -1,7 +1,6 @@
-from django.contrib import admin
+# backend/urls.py (project urls)
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('chatbot.urls')),
+    path('api/', include('chatbot.urls')),  # adjust path/app name based on your structure
 ]
